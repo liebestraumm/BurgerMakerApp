@@ -4,7 +4,7 @@ import classes from './App.css';
 import BurgerMaker from './containers/BurgerMaker/BurgerMaker';
 function App() {
   return (
-    <div className={classes.App}>
+    <div>
       <Layout>
         <p>
           <BurgerMaker />
