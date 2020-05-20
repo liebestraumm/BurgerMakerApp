@@ -29,11 +29,16 @@
     cursor: not-allowed;
 }
 
-.Label {
+.BuildControl .Label {
     padding: 10px;
     font-weight: bold;
     width: 80px;
+    word-wrap: break-word;
 }
+
+/* .BuildControl .Label h4 {
+    margin: 0;
+} */
 
 .BuildControl .Less {  
     background-color: #D39952;
