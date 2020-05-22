@@ -1,5 +1,7 @@
 import React from "react";
 import Aux from "../../../hoc/AuxContainer";
+import Button from "../../UI/Button/Button";
+import Classes from "./OrderSummary.css";
 
 const orderSummary = (props) => {
 
@@ -16,7 +18,12 @@ const orderSummary = (props) => {
             <ul>
                 {ingredientSummary}
             </ul>
+            <h3 className={Classes.OrderSummary}><strong>Total Price: {props.price.toFixed(2)}$</strong></h3>
             <p>Wanna checkout mate?</p>
+                <div className={Classes.OrderSummary}>
+                    <Button clicked={props.continue} btnType="Success">CONTINUE</Button>
+                    <Button clicked={props.cancel} btnType="Danger">CANCEL</Button>
+                </div>
         </Aux>
     );
 }
