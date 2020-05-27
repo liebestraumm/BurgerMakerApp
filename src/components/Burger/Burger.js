@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Burger.css';
 import BurgerIngredient from './BurgerIngredients/BurgerIngredients';
-let itIs = false;
+
 const burger = (props) => {
     let transformedIngredients = Object.keys(props.ingredients).map(igKey => {
                     console.log("aaa");
@@ -14,8 +14,8 @@ const burger = (props) => {
                     return initialElement.concat(currentElement);
                 }, []);
 
-        if(transformedIngredients.length === 0 || itIs) {
-            transformedIngredients = <p>Ponle mas verga a esa vaina menol!</p>
+        if(transformedIngredients.length === 0) {
+            transformedIngredients = <p>Please add your first ingredient</p>
         }
     return (
         <div className={classes.Burger}>
