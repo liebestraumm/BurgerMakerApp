@@ -4,6 +4,7 @@ import Burger from "../../components/Burger/Burger";
 import BuildControls from "../../components/Burger/BuildControls/BuildControls";
 import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
+import Sidedrawer from "../../components/Navigation/Sidedrawer/Sidedrawer";
 
 //Global Constant
  const INGREDIENT_PRICES = {
@@ -93,6 +94,7 @@ class BurgerMaker extends Component {
         console.log(disabledInfo);
         return(
             <Aux>
+                {/* <Sidedrawer modalClosed={this.purchaseCancel} show={this.state.purchasing}/> */}
                 <Modal modalClosed={this.purchaseCancel} show={this.state.purchasing}>
                     <OrderSummary  price={this.state.totalPrice} 
                                    continue={this.purchaseContinueHandle} 
