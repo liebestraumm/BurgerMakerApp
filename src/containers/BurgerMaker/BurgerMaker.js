@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import Aux from "../../hoc/AuxContainer";
+import Aux from "../../hoc/AuxContainer/AuxContainer";
 import Burger from "../../components/Burger/Burger";
 import BuildControls from "../../components/Burger/BuildControls/BuildControls";
 import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
-import Sidedrawer from "../../components/Navigation/Sidedrawer/Sidedrawer";
 
 //Global Constant
  const INGREDIENT_PRICES = {
